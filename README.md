@@ -1,21 +1,21 @@
-# Med3Web Dicom 2d/3d web viewer.
+# MRI Viewer Dicom 2d/3d web viewer.
 
 Copyright (c) 2015–2018 [EPAM Systems, Inc.](https://www.epam.com/)
 
-Med3Web is a high performance web tool for advanced visualization (both in 2d and 3d modes)
+MRI Viewer is a high performance web tool for advanced visualization (both in 2d and 3d modes)
 medical volumetric data, provided in popular file formats: Dicom, Nifti, Ktx, Hdr.
 Other popular formats will be planned for future improvements.
-Med3Web can read local data from files/folders and from predefined web locations.
+MRI Viewer can read local data from files/folders and from predefined web locations.
 Demonstration project shows both (local data / remote data) usage types.
 It works as a standalone HTML5 web application. The latest version can be used with
 WebGL-enabled desktop browsers (Chrome, Firefox, Safari, Opera) and allow limited usage
 with mobile browsers (Android Chrome).
 
-![Background image](app/images/med3web_logo.png)
+![Background image](app/images/MRI Viewer_logo.png)
 
 ## Market evaluation
 
-Med3Web can be used in a medical center with diagnostic equipment.
+MRI Viewer can be used in a medical center with diagnostic equipment.
 MRI and CT scanning results can be viewed in any computer (inside the medical office and in the client home)
 and qualified medical personnel can provide diagnosis or conclusion based on provided visualization.
 Unlike the range of standalone Dicom viewers executables, this app can be used as a web
@@ -54,12 +54,12 @@ Introduction to the project can be loaded here:
 
 Load project from git server:
 ```
-git clone https://github.com/epam/med3web.git
+git clone https://github.com/epam/MRI Viewer.git
 ```
 
 Start operations in order to load all required Node.js packages:
 ```
-cd med3web
+cd MRI Viewer
 npm install
 ```
 
@@ -150,7 +150,7 @@ There are some important notes to provide correct file naming, access, etc.
 ### How to create your own Dicom files dataset
 
 1. Prepare folder with Dicom (*.dcm) files in some local folder on your workstation. 
-For example: D:/med3web/data/dicom/lungs
+For example: D:/MRI Viewer/data/dicom/lungs
 It is important to have ONLY *.dcm files inside this folder
 
 2. Run command
@@ -167,19 +167,19 @@ Header set Access-Control-Allow-Methods "GET"
 ```
 
 4. Copy your local folder (containing *.dcm, .htaccess, file_lists.txt files) into
-your web server. For example on location: www.mysite.org/med3web/data/lungs
+your web server. For example on location: www.mysite.org/MRI Viewer/data/lungs
 
 5. Check correct URL and access possibility for just created folder.
 Enter in url line:
 ```
-www.mysite.org/med3web/data/lungs/file_list.txt
+www.mysite.org/MRI Viewer/data/lungs/file_list.txt
 ```
 You should see *.dcm file listing in browser window.
 
-6. Run Med3Web application, hosted on your server (dont use virtual server) and select "File -> Open by URL".
+6. Run MRI Viewer application, hosted on your server (dont use virtual server) and select "File -> Open by URL".
 Enter url
 ```
-www.mysite.org/med3web/data/lungs
+www.mysite.org/MRI Viewer/data/lungs
 ```
 into Input URL text field and press "Load" button.
 It is important to remove trailing slash from your URL folder name.
